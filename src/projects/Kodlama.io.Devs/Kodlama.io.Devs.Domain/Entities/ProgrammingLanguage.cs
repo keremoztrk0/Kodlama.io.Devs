@@ -11,7 +11,7 @@ namespace Kodlama.io.Devs.Domain.Entities
     {
         public ProgrammingLanguage()
         {
-
+            Technologies = new HashSet<Technology>();
         }
 
         public ProgrammingLanguage(int id,string name):this()
@@ -20,5 +20,7 @@ namespace Kodlama.io.Devs.Domain.Entities
             Name = name;
         }
         public string Name { get; set; }
+
+        public virtual ICollection<Technology> Technologies { get; set; }
     }
 }

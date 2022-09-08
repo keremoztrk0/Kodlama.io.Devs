@@ -17,6 +17,8 @@ namespace Kodlama.io.Devs.Persistence.Configurations
             
             builder.Property(x => x.Id).HasColumnName("Id");
             builder.Property(x => x.Name).HasColumnName("Name").IsRequired(true);
+
+            builder.HasMany(x => x.Technologies);
         }
     }
 }
