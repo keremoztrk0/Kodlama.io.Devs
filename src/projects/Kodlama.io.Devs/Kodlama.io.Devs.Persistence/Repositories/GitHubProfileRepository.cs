@@ -1,5 +1,4 @@
 ﻿using Core.Persistence.Repositories;
-using Core.Security.Entities;
 using Kodlama.io.Devs.Application.Services.Repositories;
 using Kodlama.io.Devs.Domain.Entities;
 using Kodlama.io.Devs.Persistence.Contexts;
@@ -11,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Kodlama.io.Devs.Persistence.Repositories
 {
-    public class TechnologyRepository:EfRepositoryBase<Technology,BaseDbContext>,ITechnologyRepository
+    public class GitHubProfileRepository :EfRepositoryBase<GitHubProfile,BaseDbContext>,IGitHubProfileRepository 
     {
-        public TechnologyRepository(BaseDbContext baseDbContext):base(baseDbContext)
+        public GitHubProfileRepository(BaseDbContext context) : base(context)
         {
 
         }

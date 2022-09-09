@@ -16,12 +16,11 @@ namespace Kodlama.io.Devs.Domain.Entities
         {
         }
 
-        public Technology(int id, int programmingLanguageId, string name, ProgrammingLanguage programmingLanguage)
+        public Technology(int id, int programmingLanguageId, string name)
         {
             Id = id;
             Name = name;
             ProgrammingLanguageId = programmingLanguageId;
-            ProgrammingLanguage = programmingLanguage;
         }
     }
 }

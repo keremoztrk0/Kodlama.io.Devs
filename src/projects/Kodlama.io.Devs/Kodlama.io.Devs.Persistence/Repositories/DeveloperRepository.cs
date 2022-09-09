@@ -4,16 +4,13 @@ using Kodlama.io.Devs.Application.Services.Repositories;
 using Kodlama.io.Devs.Domain.Entities;
 using Kodlama.io.Devs.Persistence.Contexts;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kodlama.io.Devs.Persistence.Repositories
 {
-    public class TechnologyRepository:EfRepositoryBase<Technology,BaseDbContext>,ITechnologyRepository
+    public class DeveloperRepository : EfRepositoryBase<Developer, BaseDbContext>, IDeveloperRepository
     {
-        public TechnologyRepository(BaseDbContext baseDbContext):base(baseDbContext)
+        public DeveloperRepository(BaseDbContext baseDbContext) : base(baseDbContext)
         {
 
         }
